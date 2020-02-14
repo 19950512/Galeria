@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Galeria</title>
+		<script src="js/galeria.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/site.min.css">
+	</head>
+	<body>
+		<h1>Galeria - '-'</h1>
+
+		<div class="galeria-container" id="galeria">
+			<div class="galeria-imagem">
+				<img class="galeria-principal" />
+				<button class="galeria-left">LEFT</button>
+				<button class="galeria-right">RIGHT</button>
+			</div>
+			<div class="galeria-controles">
+				
+			</div>
+
+		</div>
+		<script>
+
+			var imagens = {
+				0: {
+					'nome': 'Gatinho 01',
+					'src': 'img/galeria/01.jpg',
+					'legenda': 'Lorem Ipsum Dollor'
+				},
+				1: {
+					'nome': 'Gatinho 02',
+					'src': 'img/galeria/02.jpg',
+					'legenda': 'Lorem Ipsum Dollor'
+				}
+			};
+
+			var configuracoes = {
+				'galeria-id': 'galeria',
+				'elements': {
+					'main': 'galeria-principal'
+				},
+				'controllers': {
+					'left': 'galeria-left',
+					'right': 'galeria-right',
+					'play': null,
+					'fullscreen': null,
+					'close': null,
+				}
+			};
+
+			var galeria = new Galeria(imagens, configuracoes);
+		</script>
+	</body>
+</html>

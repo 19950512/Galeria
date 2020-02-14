@@ -1,0 +1,32 @@
+body {
+  display: block;
+  background-color: gray; }
+
+.galeria-container {
+  display: block;
+  width: 100%;
+  max-width: calc(100vw - 100vh);
+  margin: auto; }
+  .galeria-container .galeria-imagem {
+    display: block;
+    width: 100%;
+    position: relative; }
+    .galeria-container .galeria-imagem img {
+      display: block;
+      width: 100%; }
+    .galeria-container .galeria-imagem .galeria-left {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%); }
+    .galeria-container .galeria-imagem .galeria-right {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%); }
+  .galeria-container .galeria-controles {
+    display: block;
+    width: 100%;
+    background-color: blue; }
+
+/*# sourceMappingURL=map/site.min.css.map */
