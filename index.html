@@ -15,7 +15,7 @@
 				<button class="galeria-right">RIGHT</button>
 			</div>
 			<div class="galeria-controles">
-				
+				<button class="geleria-play">ON</button>
 			</div>
 
 		</div>
@@ -31,6 +31,11 @@
 					'nome': 'Gatinho 02',
 					'src': 'img/galeria/02.jpg',
 					'legenda': 'Lorem Ipsum Dollor'
+				},
+				2: {
+					'nome': 'Gatinho 03',
+					'src': 'img/galeria/03.jpg',
+					'legenda': 'Lorem Ipsum Dollor'
 				}
 			};
 
@@ -42,13 +47,14 @@
 				'controllers': {
 					'left': 'galeria-left',
 					'right': 'galeria-right',
-					'play': null,
+					'play': 'geleria-play',
 					'fullscreen': null,
 					'close': null,
 				}
 			};
 
 			var galeria = new Galeria(imagens, configuracoes);
+			galeria.init();
 		</script>
 	</body>
 </html>
